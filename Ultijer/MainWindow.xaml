@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ultijer"
         mc:Ignorable="d"
-        Title="Ultijer" Height="450" Width="800" Background="#FF323232">
+        Title="Ultijer" Height="450" Width="800" Background="#FF323232" Style="{StaticResource RedWindowStyle}">
     <Grid x:Name="parent">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="146*"/>
