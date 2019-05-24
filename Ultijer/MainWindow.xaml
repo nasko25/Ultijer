@@ -19,7 +19,7 @@
                     <TextBlock Margin="50,17,0,0"><Run Text="Home"/></TextBlock>
                     <Image x:Name="image_home" Height="32" Width="32" Margin="-77,-27,0,0">
                         <Image.Source>
-                            <BitmapImage UriSource="file:///C:/Users/Atanas Pashov/Desktop/home.png"/>
+                            <BitmapImage UriSource="images/home.png"/>
                         </Image.Source>
                     </Image>
                 </StackPanel>
@@ -30,7 +30,7 @@
                     <TextBlock Margin="50,17,0,0"><Run Text="Movies"/></TextBlock>
                     <Image x:Name="image_movie" Height="26" Width="26" Margin="-78,-26,0,0">
                         <Image.Source>
-                            <BitmapImage UriSource="file:///C:/Users/Atanas Pashov/Desktop/movies.png"/>
+                            <BitmapImage UriSource="images/movies.png"/>
                         </Image.Source>
                     </Image>
                 </StackPanel>

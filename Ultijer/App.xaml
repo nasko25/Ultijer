@@ -11,8 +11,8 @@
         <SolidColorBrush x:Key="WindowForeColor" Color="WhiteSmoke"/>
         <SolidColorBrush x:Key="WindowForeHighlightColor" Color="WhiteSmoke"/>
         <SolidColorBrush x:Key="WindowButtonColor" Color="#FF323232"/>
-        <SolidColorBrush x:Key="WindowButtonOverColor" Color="LightBlue"/>
-        <SolidColorBrush x:Key="WindowButtonPressedColor" Color="DarkBlue"/>
+        <SolidColorBrush x:Key="WindowButtonOverColor" Color="DarkRed"/>
+        <SolidColorBrush x:Key="WindowButtonPressedColor" Color="#FF323232"/>
 
         <!---red window brushes-->
         <!--<SolidColorBrush x:Key="WindowColor" Color="DarkRed"/> 
@@ -30,8 +30,8 @@
         <sw:WindowCloseCommand x:Key="CloseCommand"></sw:WindowCloseCommand>
 
         <Style TargetType="{x:Type Button}" x:Key="WindowButton">
-            <Setter Property="Height" Value="25"/>
-            <Setter Property="Width" Value="25"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="30"/>
             <Setter Property="Background" Value="{StaticResource WindowButtonColor}"/>
             <Setter Property="Foreground" Value="{StaticResource WindowForeColor}"/>
             <Setter Property="Template">
@@ -75,11 +75,11 @@
                         <RowDefinition Height="30"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="0" Margin="5,0,5,0">
+                    <Grid Grid.Row="0" Margin="5,0,0,0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="auto"/>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition Width="90"/>
                         </Grid.ColumnDefinitions>
                         <Label Grid.Column="0"                                            
                                     sw:ControlDoubleClickBehavior.ExecuteCommand="{StaticResource CloseCommand}"                                                
