@@ -12,5 +12,6 @@ namespace Ultijer
 	/// </summary>
 	public partial class App : Application
 	{
+		
 	}
 }
