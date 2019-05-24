@@ -7,10 +7,10 @@
     <Application.Resources>
         <!--the brushes used in the template (use these to customize the window look along with the window style (see the bottom of this file)-->
         <SolidColorBrush x:Key="WindowColor" Color="Red"/>
-        <SolidColorBrush x:Key="WindowBackColor" Color="Orange"/>
+        <SolidColorBrush x:Key="WindowBackColor" Color="#FF323232"/>
         <SolidColorBrush x:Key="WindowForeColor" Color="WhiteSmoke"/>
         <SolidColorBrush x:Key="WindowForeHighlightColor" Color="WhiteSmoke"/>
-        <SolidColorBrush x:Key="WindowButtonColor" Color="Blue"/>
+        <SolidColorBrush x:Key="WindowButtonColor" Color="#FF323232"/>
         <SolidColorBrush x:Key="WindowButtonOverColor" Color="LightBlue"/>
         <SolidColorBrush x:Key="WindowButtonPressedColor" Color="DarkBlue"/>
 
@@ -64,7 +64,7 @@
             <Setter Property="Width" Value="25"/>
         </Style>
 
-        <ControlTemplate x:Key="WindowTemplate" TargetType="{x:Type Window}">
+        <ControlTemplate x:Key="MainWindow" TargetType="{x:Type Window}">
             <Grid Background="{StaticResource WindowBackColor}">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -147,7 +147,7 @@
             <Setter Property="BorderBrush" Value="Green"/>
             <Setter Property="BorderThickness" Value="7"/>
             <Setter Property="Foreground" Value="DarkRed"/>
-            <Setter Property="Template" Value="{StaticResource WindowTemplate}"/>
+            <Setter Property="Template" Value="{StaticResource MainWindow}"/>
         </Style>
 
         <!--the red style window-->
@@ -156,11 +156,11 @@
             <Setter Property="AllowsTransparency" Value="True"/>
             <Setter Property="MinWidth" Value="100"/>
             <Setter Property="MinHeight" Value="46"/>
-            <Setter Property="Background" Value="white"/>
+            <Setter Property="Background" Value="White"/>
             <Setter Property="BorderBrush" Value="DarkRed"/>
-            <Setter Property="BorderThickness" Value="7"/>
+            <Setter Property="BorderThickness" Value="1, 0, 1, 1"/>
             <Setter Property="Foreground" Value="DarkGray"/>
-            <Setter Property="Template" Value="{StaticResource WindowTemplate}"/>
+            <Setter Property="Template" Value="{StaticResource MainWindow}"/>
         </Style>
 
     </Application.Resources>
