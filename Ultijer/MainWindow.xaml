@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ultijer"
         mc:Ignorable="d"
-        Title="Ultijer" Height="450" Width="800" Background="#FF323232" Style="{StaticResource RedWindowStyle}">
+        Title="Ultijer" Height="450" Width="800" MinHeight ="400" MinWidth="600" Background="#FF323232" Style="{StaticResource RedWindowStyle}">
     <Grid x:Name="parent">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="146*"/>
             <ColumnDefinition Width="251*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="10" Margin="150,0,0,0" VerticalAlignment="Top" Width="650" Background="#FF3C0E0E"/>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Height="10" Margin="150,0,0,0" VerticalAlignment="Top" Background="#FF3C0E0E"/>
         <Grid HorizontalAlignment="Left" Height="420" Margin="0,0,0,0" VerticalAlignment="Top" Width="150">
             <Button x:Name="home_button" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="130" Height="55" Background="Transparent" Foreground="White" FontFamily="Stencil" FontSize="18" BorderBrush="Transparent" Focusable="False">
                 <!-- Transparent for the border and the background could be #FF323232-->
@@ -35,6 +35,21 @@
                     </Image>
                 </StackPanel>
             </Button>
+            <Button x:Name="books_button" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top" Width="130" Height="55" Background="Transparent" Foreground="White" FontFamily="Stencil" FontSize="18" BorderBrush="Transparent" Focusable="False">
+                <!-- Transparent for the border and the background could be #FF323232-->
+                <StackPanel Width="130" Height="55">
+                    <TextBlock Margin="50,17,0,0"><Run Text="Books"/></TextBlock>
+                    <Image x:Name="image_book" Height="26" Width="26" Margin="-78,-24,0,0" Source="images/book.png"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="tv_series_button" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Width="130" Height="55" Background="Transparent" Foreground="White" FontFamily="Stencil" FontSize="18" BorderBrush="Transparent" Focusable="False">
+                <!-- Transparent for the border and the background could be #FF323232-->
+                <StackPanel Width="130" Height="55">
+                    <TextBlock Margin="50,17,0,0"><Run Text="Series"/></TextBlock>
+                    <Image x:Name="image_tv" Height="27" Width="27" Margin="-76,-26,0,0" Source="images/tv.png"/>
+                </StackPanel>
+            </Button>
+
 
             <Button x:Name="j_n" Content="Journal" HorizontalAlignment="Left" Margin="10,326,0,0" VerticalAlignment="Top" Width="130" Height="39" Click ="OnButtonClick" Foreground="White" FontSize="18" FontFamily="SimSun" Focusable="False" BorderBrush="Transparent" OpacityMask="Black">
                 <Button.Style>

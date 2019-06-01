@@ -44,6 +44,6 @@ namespace Ultijer
 				parent.Children.Remove(home);
 				removed_home = true;
 			}
-		}
+		} 
 	}
 }

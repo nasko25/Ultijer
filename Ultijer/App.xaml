@@ -163,7 +163,7 @@
             <Setter Property="MinHeight" Value="46"/>
             <Setter Property="Background" Value="White"/>
             <Setter Property="BorderBrush" Value="DarkRed"/>
-            <Setter Property="BorderThickness" Value="1, 1, 1, 0"/>
+            <Setter Property="BorderThickness" Value="1, 1, 1, 1"/>
             <Setter Property="Foreground" Value="DarkGray"/>
             <Setter Property="Template" Value="{StaticResource MainWindow}"/>
         </Style>
