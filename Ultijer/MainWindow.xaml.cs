@@ -20,12 +20,14 @@ namespace Ultijer
 	public partial class MainWindow : Window
 	{
 		Grid home, movies;
-		bool removed_home = false;
+		bool removed_home = false, removed_movies = false;
 		public MainWindow()
 		{
 			InitializeComponent();
 			home = Home;
 			parent.Children.Remove(this.home); removed_home = true;
+			movies = Movies;
+			parent.Children.Remove(this.movies); removed_movies = true;
 		}
 		public void OnButtonClick(object sender, RoutedEventArgs e) {
 			if (j_n.Content.Equals("Journal")) {
@@ -43,6 +45,9 @@ namespace Ultijer
 			else {
 				parent.Children.Remove(home);
 				removed_home = true;
+			}
+			if (sender.Equals(movies_button)) {
+				MessageBox.Show("YOU SELECTED THE MOVIES BUTTON");
 			}
 		} 
 	}

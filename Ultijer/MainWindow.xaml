@@ -11,7 +11,7 @@
             <ColumnDefinition Width="146*"/>
             <ColumnDefinition Width="251*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Height="10" Margin="150,0,0,0" VerticalAlignment="Top" Background="#FF3C0E0E"/>
+        <Grid Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Height="5" Margin="150,0,0,0" VerticalAlignment="Top" Background="#FF3C0E0E"/>
         <Grid HorizontalAlignment="Left" Height="420" Margin="0,0,0,0" VerticalAlignment="Top" Width="150">
             <Button x:Name="home_button" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="130" Height="55" Background="Transparent" Foreground="White" FontFamily="Stencil" FontSize="18" BorderBrush="Transparent" Focusable="False">
                 <!-- Transparent for the border and the background could be #FF323232-->
@@ -24,7 +24,7 @@
                     </Image>
                 </StackPanel>
             </Button>
-            <Button x:Name="movies_button" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="130" Height="55" Background="Transparent" Foreground="White" FontFamily="Stencil" FontSize="18" BorderBrush="Transparent" Focusable="False">
+            <Button x:Name="movies_button" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="130" Height="55" Click ="OnButtonClick" Background="Transparent" Foreground="White" FontFamily="Stencil" FontSize="18" BorderBrush="Transparent" Focusable="False">
                 <!-- Transparent for the border and the background could be #FF323232-->
                 <StackPanel Width="130" Height="55">
                     <TextBlock Margin="50,17,0,0"><Run Text="Movies"/></TextBlock>
@@ -74,7 +74,7 @@
                 </Button.Style>
             </Button>
         </Grid>
-        <Grid x:Name="Home" HorizontalAlignment="Left" Height="405" Margin="155,15,-0.4,0" VerticalAlignment="Top" Width="639" Grid.ColumnSpan="2">
+        <Grid x:Name="Home" HorizontalAlignment="Left" Height="405" Margin="155,15,-0.4,0" VerticalAlignment="Top" Width="639" Grid.ColumnSpan="2" Visibility="Hidden"> <!-- TODO remove the Visibility="Hidden" --> 
             <TextBlock x:Name="textBox" HorizontalAlignment="Left" Height="170" Margin="194,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" FontSize="20" FontFamily="Tempus Sans ITC" Background="#FF2B2B2B" Foreground="White" Padding="50,0,10,0">
                 Hello <LineBreak/>
                 this is the home section
@@ -83,5 +83,8 @@
         <!-- change this grid ^^^ everytime a button is clicked (or show it/hide it depending on what button was clicked)
         https://stackoverflow.com/questions/15702621/wpf-how-to-remove-a-grid
         -->
+        <Grid x:Name="Movies" HorizontalAlignment="Left" Height="405" Margin="155,15,-0.4,0" VerticalAlignment="Top" Width="639" Grid.ColumnSpan="2">
+            
+        </Grid>
     </Grid>
 </Window>
