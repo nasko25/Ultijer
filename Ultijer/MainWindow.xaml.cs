@@ -46,7 +46,9 @@ namespace Ultijer
 				parent.Children.Remove(home);
 				removed_home = true;
 			}
-			if (sender.Equals(movies_button)) {
+			if (sender.Equals(movies_button) && removed_movies) {
+				parent.Children.Add(movies);
+				removed_movies = false;
 				MessageBox.Show("YOU SELECTED THE MOVIES BUTTON");
 			}
 		} 
