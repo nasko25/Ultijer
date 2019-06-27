@@ -89,7 +89,7 @@
             <!-- TODO smoother scrolling  -> https://stackoverflow.com/a/9875475/117797 ?
                 TODO fix border when selecting a movie
             -->
-            <ListBox x:Name="listBox" HorizontalAlignment="Stretch" Margin="0,0,0,0" Background="Transparent" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Disabled" BorderThickness="0">
+            <ListBox x:Name="listBox" HorizontalAlignment="Stretch" Margin="0,0,0,0" Background="Transparent" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Disabled" BorderThickness="0" VirtualizingPanel.ScrollUnit="Pixel">
                 <Button x:Name="movie_1" HorizontalAlignment="Stretch" Height="140" Background="Transparent" Focusable="False">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
