@@ -132,7 +132,7 @@
                             </Style.Triggers>
                         </Style>
                     </Button.Style>
-                    <Image x:Name="movie_image_2" Height="123" Width="96" Source="movie images testing/movie_1.jpg" Margin="0, 0, 0, 0"/>
+                    <Image x:Name="movie_image_2" Height="123" Width="96" Source="movie images testing/movie2.jpg" Margin="0, 0, 0, 0"/>
                 </Button>
                 <Button x:Name="movie_3" HorizontalAlignment="Stretch" Height="140" Background="Transparent" Focusable="False">
                     <Button.Style>
@@ -154,7 +154,7 @@
                             </Style.Triggers>
                         </Style>
                     </Button.Style>
-                    <Image x:Name="movie_image_3" Height="123" Width="96" Source="movie images testing/movie_1.jpg" Margin="0, 0, 0, 0"/>
+                    <Image x:Name="movie_image_3" Height="123" Width="96" Source="movie images testing/movie3.jpeg" Margin="0, 0, 0, 0"/>
                 </Button>
                 <Button x:Name="movie_4" HorizontalAlignment="Stretch" Height="140" Background="Transparent" Focusable="False">
                     <Button.Style>
@@ -178,6 +178,12 @@
                     </Button.Style>
                     <Image x:Name="movie_image_4" Height="123" Width="96" Source="movie images testing/movie_1.jpg" Margin="0, 0, 0, 0"/>
                 </Button>
+                <!--<ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel local:PixelBasedScrollingBehavior.IsEnabled="True">
+                        </VirtualizingStackPanel>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>--> 
             </ListBox>
 
         </Grid>

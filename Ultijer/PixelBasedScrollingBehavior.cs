@@ -12,8 +12,8 @@ using System.Windows.Controls;
 
 namespace Ultijer
 {
-    public static class PixelBasedScrollingBehavior
-    {
+	public static class PixelBasedScrollingBehavior
+	{
 		public static bool GetIsEnabled(DependencyObject obj)
 		{
 			return (bool)obj.GetValue(IsEnabledProperty);
