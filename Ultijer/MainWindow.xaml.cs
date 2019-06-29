@@ -33,11 +33,10 @@ namespace Ultijer
 			parent.Children.Remove(this.movies); removed_movies = true;
 		}
 		public void OnButtonClick(object sender, RoutedEventArgs e) {
-			String sender_string = sender.ToString().Substring(sender.ToString().IndexOf(":") + 2); // 2. because there is : and a space too much
-			if (j_n.Content.Equals("Journal") && sender_string.Equals("Journal")) {
+			if (j_n.Content.Equals("Journal") && sender.Equals(j_n)) {
 				j_n.Content = "Notes";
 			}
-			else if (j_n.Content.Equals("Notes") && sender_string.Equals("Notes"))
+			else if (j_n.Content.Equals("Notes") && sender.Equals(j_n))
 			{
 				j_n.Content = "Journal";
 			}
