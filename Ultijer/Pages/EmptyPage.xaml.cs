@@ -15,14 +15,14 @@ using System.Windows.Shapes;
 
 namespace Ultijer.Pages
 {
-    /// <summary>
-    /// Interaction logic for EmptyPage.xaml
-    /// </summary>
-    public partial class EmptyPage : Page
-    {
-        public EmptyPage()
-        {
-            InitializeComponent();
-        }
-    }
+	/// <summary>
+	/// Interaction logic for EmptyPage.xaml
+	/// </summary>
+	public partial class EmptyPage : Page
+	{
+		public EmptyPage()
+		{
+			InitializeComponent();
+		}
+	}
 }
