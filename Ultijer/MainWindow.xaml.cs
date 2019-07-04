@@ -22,15 +22,12 @@ namespace Ultijer
 	// TODO probably the OnButtonClick(..., ...) should be implemented with a switch statement  !!!!
 	public partial class MainWindow : Window
 	{
-		Grid home, movies;
 		bool removed_home = false, removed_movies = false;
 		public MainWindow()
 		{
 			InitializeComponent();
-			home = Home;
-			parent.Children.Remove(this.home); removed_home = true;
-			movies = Movies;
-			parent.Children.Remove(this.movies); removed_movies = true;
+			removed_home = true;
+			removed_movies = true;
 		}
 		public void OnButtonClick(object sender, RoutedEventArgs e) {
 			if (j_n.Content.Equals("Journal") && sender.Equals(j_n)) {
@@ -42,21 +39,21 @@ namespace Ultijer
 			}
 			if (removed_home && sender.Equals(home_button))
 			{
-				parent.Children.Add(home);
+				_mainFrame.Navigate(new Pages.Home());
 				removed_home = false;
 			}
 			else if (!removed_home && !sender.Equals(home_button)) {
-				parent.Children.Remove(home);
+				_mainFrame.Navigate(new Pages.EmptyPage());
 				removed_home = true;
 			}
 			if (sender.Equals(movies_button) && removed_movies)
 			{
-				parent.Children.Add(movies);
+				_mainFrame.Navigate(new Pages.Movies());
 				removed_movies = false;
 				MessageBox.Show("YOU SELECTED THE MOVIES BUTTON");
 			}
 			else if (!sender.Equals(movies_button) && !removed_movies) {
-				parent.Children.Remove(movies);
+				_mainFrame.Navigate(new Pages.EmptyPage());
 				removed_movies = true;
 			}
 			// TODO instead of remopving the elements in the view one by one, try to remove them all together like:

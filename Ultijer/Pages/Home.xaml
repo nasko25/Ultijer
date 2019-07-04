@@ -1,0 +1,21 @@
+﻿<Page x:Class="Ultijer.Pages.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Ultijer.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Home">
+    <!-- x:Name="Home" HorizontalAlignment="Left" Height="405" Margin="155,15,-0.4,0" VerticalAlignment="Top" Width="639" Grid.ColumnSpan="2" Visibility="Hidden" was in Grid-->
+        <Grid>
+        <!-- TODO remove the Visibility="Hidden" -->
+            <TextBlock x:Name="textBox" HorizontalAlignment="Left" Height="170" Margin="194,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" FontSize="20" FontFamily="Tempus Sans ITC" Background="#FF2B2B2B" Foreground="White" Padding="50,0,10,0">
+                Hello <LineBreak/>
+                this is the home section
+            </TextBlock>
+     </Grid>
+        <!-- change this grid ^^^ everytime a button is clicked (or show it/hide it depending on what button was clicked)
+        https://stackoverflow.com/questions/15702621/wpf-how-to-remove-a-grid
+        -->
+</Page>
