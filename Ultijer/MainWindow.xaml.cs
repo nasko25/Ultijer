@@ -19,7 +19,6 @@ namespace Ultijer
 	/// </summary>
 	/// 
 
-	// TODO probably the OnButtonClick(..., ...) should be implemented with a switch statement  !!!!
 	public partial class MainWindow : Window
 	{
 		bool removed_home = false, removed_movies = false;
@@ -37,7 +36,7 @@ namespace Ultijer
 			{
 				j_n.Content = "Journal";
 			}
-			if (removed_home && sender.Equals(home_button))
+			if (removed_home && sender.Equals(home_button) && j_n.Content.Equals("Journal"))
 			{
 				_mainFrame.Navigate(new Pages.Home());
 				removed_home = false;
@@ -46,7 +45,7 @@ namespace Ultijer
 				_mainFrame.Navigate(new Pages.EmptyPage());
 				removed_home = true;
 			}
-			if (sender.Equals(movies_button) && removed_movies)
+			if (sender.Equals(movies_button) && removed_movies && j_n.Content.Equals("Journal"))
 			{
 				_mainFrame.Navigate(new Pages.Movies());
 				removed_movies = false;
@@ -56,12 +55,6 @@ namespace Ultijer
 				_mainFrame.Navigate(new Pages.EmptyPage());
 				removed_movies = true;
 			}
-			// TODO instead of remopving the elements in the view one by one, try to remove them all together like:
-			/* foreach (System.Windows.UIElement i in parent.Children) {
-				parent.Children.Remove(i);
-			}
-			in all cases when a button is pressed, and parent.Children is not null.
-			*/ 
 		} 
 	}
 }
