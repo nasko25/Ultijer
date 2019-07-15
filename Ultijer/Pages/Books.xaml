@@ -9,6 +9,8 @@
     <Grid>
         <!-- TODO add a view that looks like a book, and the book covers will be book pages 
             Doable? 
+        https://www.youtube.com/watch?v=_ig8ZxBffGk - will need to add a custom control, and create the view there
+        https://www.youtube.com/watch?v=b9G7uxhAzt0 - animations
         -->
     </Grid>
 </Page>
