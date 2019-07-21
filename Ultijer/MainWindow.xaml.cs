@@ -21,12 +21,13 @@ namespace Ultijer
 
 	public partial class MainWindow : Window
 	{
-		bool removed_home = false, removed_movies = false;
+		bool removed_home = false, removed_movies = false, removed_books = false;
 		public MainWindow()
 		{
 			InitializeComponent();
 			removed_home = true;
 			removed_movies = true;
+			removed_books = true;
 		}
 		public void OnButtonClick(object sender, RoutedEventArgs e) {
 			if (j_n.Content.Equals("Journal") && sender.Equals(j_n)) {
@@ -54,6 +55,17 @@ namespace Ultijer
 			else if (!sender.Equals(movies_button) && !removed_movies) {
 				_mainFrame.Navigate(new Pages.EmptyPage());
 				removed_movies = true;
+			}
+
+			if (sender.Equals(books_button) && removed_books && j_n.Content.Equals("Journal"))
+			{
+				_mainFrame.Navigate(new Pages.Books());
+				removed_books = false;
+			}
+			else if (!sender.Equals(books_button) && !removed_books)
+			{
+				_mainFrame.Navigate(new Pages.EmptyPage());
+				removed_books = true;
 			}
 		} 
 	}

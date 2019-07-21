@@ -11,6 +11,17 @@
             Doable? 
         https://www.youtube.com/watch?v=_ig8ZxBffGk - will need to add a custom control, and create the view there
         https://www.youtube.com/watch?v=b9G7uxhAzt0 - animations
+        docs for animations: https://docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/animation-overview
         -->
+
+        <StackPanel Margin="10">
+            <Rectangle
+        Name="MyRectangle"
+        Width="100" 
+        Height="100"
+        Fill="Blue">
+            </Rectangle>
+        </StackPanel>
+        <Button Click="OnClick" Width="30" Height="30"> TEST </Button>
     </Grid>
 </Page>
