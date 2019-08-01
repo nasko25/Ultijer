@@ -11,7 +11,7 @@
             Doable? 
         https://www.youtube.com/watch?v=_ig8ZxBffGk - will need to add a custom control, and create the view there
         https://www.youtube.com/watch?v=b9G7uxhAzt0 - animations
-        docs for animations: https://docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/animation-overview
+        docs for animations: https://docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/animation-overview  <- more to read after the tutorial 
         -->
 
         <StackPanel Margin="10">
