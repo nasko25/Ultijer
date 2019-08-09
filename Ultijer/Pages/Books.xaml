@@ -16,12 +16,48 @@
 
         <StackPanel Margin="10">
             <Rectangle
-        Name="MyRectangle"
-        Width="100" 
-        Height="100"
-        Fill="Blue">
+                Name="MyRectangle"
+                Width="100" 
+                Height="100"
+                Fill="Blue">
+            </Rectangle>
+        
+        <Button Click="OnClick" Width="30" Height="30" Margin="0 50 0 40"> TEST </Button>
+            
+            <Rectangle
+                Name="BookCover"
+                Width="220" 
+                Height="150"
+                Fill="#331900">
+            </Rectangle>
+            <Rectangle
+                Name="BookCover2"
+                Width="210" 
+                Height="145"
+                Fill="#180C00"
+                Margin="0 -150 0 0">
+            </Rectangle>
+            <Rectangle
+                Name="Pages1"
+                Width="200" 
+                Height="140"
+                Fill="#ffffff"
+                Margin="0 -150 0 0">
+            </Rectangle>
+            <Rectangle
+                Name="BorderTop"
+                Width="4" 
+                Height="140"
+                Fill="#9E9E9E"
+                Margin="0 -150 0 0">
+            </Rectangle>
+            <Rectangle
+                Name="Border"
+                Width="2" 
+                Height="140"
+                Fill="#363636"
+                Margin="0 -150 0 0">
             </Rectangle>
         </StackPanel>
-        <Button Click="OnClick" Width="30" Height="30"> TEST </Button>
     </Grid>
 </Page>
